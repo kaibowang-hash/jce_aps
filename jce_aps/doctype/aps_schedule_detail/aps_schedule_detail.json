@@ -1,0 +1,88 @@
+{
+  "doctype": "DocType",
+  "name": "APS Schedule Detail",
+  "module": "JCE APS",
+  "istable": 1,
+  "fields": [
+    {
+      "fieldname": "workstation",
+      "fieldtype": "Link",
+      "label": "Workstation",
+      "options": "Workstation",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "sequence_no",
+      "fieldtype": "Int",
+      "label": "Sequence",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "sales_order",
+      "fieldtype": "Link",
+      "label": "Sales Order",
+      "options": "Sales Order"
+    },
+    {
+      "fieldname": "item_code",
+      "fieldtype": "Link",
+      "label": "Item Code",
+      "options": "Item",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "qty",
+      "fieldtype": "Float",
+      "label": "Qty",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "color",
+      "fieldtype": "Data",
+      "label": "Color",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "is_halogen",
+      "fieldtype": "Check",
+      "label": "Halogen"
+    },
+    {
+      "fieldname": "is_eco",
+      "fieldtype": "Check",
+      "label": "Eco"
+    },
+    {
+      "fieldname": "setup_time_min",
+      "fieldtype": "Int",
+      "label": "Setup Time Min"
+    },
+    {
+      "fieldname": "transition_penalty",
+      "fieldtype": "Float",
+      "label": "Transition Penalty"
+    },
+    {
+      "fieldname": "start_datetime",
+      "fieldtype": "Datetime",
+      "label": "Start Datetime",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "end_datetime",
+      "fieldtype": "Datetime",
+      "label": "End Datetime",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "late_hours",
+      "fieldtype": "Float",
+      "label": "Late Hours"
+    },
+    {
+      "fieldname": "machine_hours_used",
+      "fieldtype": "Float",
+      "label": "Machine Hours Used"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "doctype": "DocType",
+  "name": "APS Settings",
+  "module": "JCE APS",
+  "issingle": 1,
+  "custom": 0,
+  "editable_grid": 0,
+  "engine": "InnoDB",
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company"
+    },
+    {
+      "fieldname": "planning_horizon_days",
+      "fieldtype": "Int",
+      "label": "Planning Horizon Days",
+      "default": 7,
+      "reqd": 1
+    },
+    {
+      "fieldname": "daily_machine_hours",
+      "fieldtype": "Float",
+      "label": "Default Daily Machine Hours",
+      "default": 22,
+      "reqd": 1
+    },
+    {
+      "fieldname": "weight_tardiness",
+      "fieldtype": "Float",
+      "label": "Weight - Tardiness",
+      "default": 100,
+      "reqd": 1
+    },
+    {
+      "fieldname": "weight_setup_minutes",
+      "fieldtype": "Float",
+      "label": "Weight - Setup Minutes",
+      "default": 1,
+      "reqd": 1
+    },
+    {
+      "fieldname": "weight_transition_penalty",
+      "fieldtype": "Float",
+      "label": "Weight - Transition Penalty",
+      "default": 1,
+      "reqd": 1
+    },
+    {
+      "fieldname": "weight_nonpreferred_machine",
+      "fieldtype": "Float",
+      "label": "Weight - Non Preferred Machine",
+      "default": 50,
+      "reqd": 1
+    },
+    {
+      "fieldname": "allow_past_due",
+      "fieldtype": "Check",
+      "label": "Allow Scheduling Past Due Date",
+      "default": 1
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}
