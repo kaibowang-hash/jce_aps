@@ -1,0 +1,15 @@
+{
+  "doctype": "Page",
+  "name": "aps-planning-board",
+  "module": "JCE APS",
+  "title": "APS Planning Board",
+  "standard": "Yes",
+  "roles": [
+    {
+      "role": "Manufacturing Manager"
+    },
+    {
+      "role": "System Manager"
+    }
+  ]
+}

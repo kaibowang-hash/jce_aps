@@ -1,0 +1,148 @@
+{
+  "doctype": "DocType",
+  "name": "APS Planning Run",
+  "module": "JCE APS",
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "label": "Company",
+      "options": "Company",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "planning_date",
+      "fieldtype": "Date",
+      "label": "Planning Date",
+      "reqd": 1,
+      "default": "Today",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "planning_start_datetime",
+      "fieldtype": "Datetime",
+      "label": "Planning Start",
+      "reqd": 1
+    },
+    {
+      "fieldname": "planning_horizon_days",
+      "fieldtype": "Int",
+      "label": "Planning Horizon Days",
+      "default": 7,
+      "reqd": 1
+    },
+    {
+      "fieldname": "strategy",
+      "fieldtype": "Select",
+      "label": "Strategy",
+      "options": "Balanced\nDue Date First\nChangeover First",
+      "default": "Balanced",
+      "reqd": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Draft\nPlanned\nConfirmed\nCancelled",
+      "default": "Draft",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "summary_section",
+      "fieldtype": "Section Break",
+      "label": "Summary"
+    },
+    {
+      "fieldname": "total_score",
+      "fieldtype": "Float",
+      "label": "Total Score",
+      "read_only": 1
+    },
+    {
+      "fieldname": "scheduled_orders",
+      "fieldtype": "Int",
+      "label": "Scheduled Orders",
+      "read_only": 1
+    },
+    {
+      "fieldname": "unscheduled_orders",
+      "fieldtype": "Int",
+      "label": "Unscheduled Orders",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total_setup_minutes",
+      "fieldtype": "Float",
+      "label": "Total Setup Minutes",
+      "read_only": 1
+    },
+    {
+      "fieldname": "total_late_hours",
+      "fieldtype": "Float",
+      "label": "Total Late Hours",
+      "read_only": 1
+    },
+    {
+      "fieldname": "demands_section",
+      "fieldtype": "Section Break",
+      "label": "Demands"
+    },
+    {
+      "fieldname": "demands",
+      "fieldtype": "Table",
+      "label": "Demands",
+      "options": "APS Planning Demand",
+      "reqd": 1
+    },
+    {
+      "fieldname": "schedule_section",
+      "fieldtype": "Section Break",
+      "label": "Schedule"
+    },
+    {
+      "fieldname": "schedule_details",
+      "fieldtype": "Table",
+      "label": "Schedule Details",
+      "options": "APS Schedule Detail",
+      "read_only": 1
+    },
+    {
+      "fieldname": "exceptions_section",
+      "fieldtype": "Section Break",
+      "label": "Exceptions"
+    },
+    {
+      "fieldname": "exception_logs",
+      "fieldtype": "Table",
+      "label": "Exception Logs",
+      "options": "APS Exception Log",
+      "read_only": 1
+    }
+  ],
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1
+    },
+    {
+      "role": "Manufacturing Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1
+    },
+    {
+      "role": "Manufacturing User",
+      "read": 1
+    }
+  ]
+}

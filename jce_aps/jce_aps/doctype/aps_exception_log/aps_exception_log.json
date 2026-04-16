@@ -1,0 +1,41 @@
+{
+  "doctype": "DocType",
+  "name": "APS Exception Log",
+  "module": "JCE APS",
+  "istable": 1,
+  "fields": [
+    {
+      "fieldname": "severity",
+      "fieldtype": "Select",
+      "label": "Severity",
+      "options": "Info\nWarning\nError",
+      "default": "Warning",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "exception_type",
+      "fieldtype": "Data",
+      "label": "Exception Type",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "sales_order",
+      "fieldtype": "Link",
+      "label": "Sales Order",
+      "options": "Sales Order"
+    },
+    {
+      "fieldname": "item_code",
+      "fieldtype": "Link",
+      "label": "Item Code",
+      "options": "Item",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "message",
+      "fieldtype": "Small Text",
+      "label": "Message",
+      "in_list_view": 1
+    }
+  ]
+}
