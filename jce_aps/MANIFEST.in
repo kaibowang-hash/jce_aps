@@ -1,2 +1,0 @@
-recursive-include jce_aps *.json *.js *.css *.html *.csv *.txt *.md *.png *.jpg *.jpeg *.gif *.svg *.py
-recursive-exclude jce_aps *.pyc
