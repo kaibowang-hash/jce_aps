@@ -1,0 +1,193 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "APS-DMD-.#####",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "customer",
+  "sales_order",
+  "item_code",
+  "customer_part_no",
+  "demand_source",
+  "demand_date",
+  "qty",
+  "status",
+  "priority_score",
+  "is_urgent",
+  "food_grade",
+  "color_code",
+  "material_code",
+  "is_first_article",
+  "source_doctype",
+  "source_name",
+  "remark",
+  "is_system_generated"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_part_no",
+   "fieldtype": "Data",
+   "label": "Customer Part No"
+  },
+  {
+   "fieldname": "demand_source",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Demand Source",
+   "options": "\nCustomer Delivery Schedule\nSales Order Backlog\nSafety Stock\nUrgent Order\nTrial Production\nComplaint Replenishment"
+  },
+  {
+   "fieldname": "demand_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Demand Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty",
+   "reqd": 1
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nOpen\nPlanned\nCancelled\nClosed"
+  },
+  {
+   "fieldname": "priority_score",
+   "fieldtype": "Int",
+   "label": "Priority Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "is_urgent",
+   "fieldtype": "Check",
+   "label": "Urgent"
+  },
+  {
+   "fieldname": "food_grade",
+   "fieldtype": "Data",
+   "label": "Food Grade"
+  },
+  {
+   "fieldname": "color_code",
+   "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "fieldname": "material_code",
+   "fieldtype": "Data",
+   "label": "Material"
+  },
+  {
+   "fieldname": "is_first_article",
+   "fieldtype": "Check",
+   "label": "First Article"
+  },
+  {
+   "fieldname": "source_doctype",
+   "fieldtype": "Data",
+   "label": "Source Doctype"
+  },
+  {
+   "fieldname": "source_name",
+   "fieldtype": "Dynamic Link",
+   "label": "Source Name",
+   "options": "source_doctype"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  },
+  {
+   "fieldname": "is_system_generated",
+   "fieldtype": "Check",
+   "label": "System Generated",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "module": "Injection APS",
+ "name": "APS Demand Pool",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "share": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Manager",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

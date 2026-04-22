@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:rule_name",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rule_name",
+  "company",
+  "plant_floor",
+  "freeze_scope",
+  "freeze_days",
+  "requires_management_approval",
+  "apply_to_released_segments",
+  "is_default",
+  "is_active",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "rule_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rule Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "plant_floor",
+   "fieldtype": "Link",
+   "label": "Plant Floor",
+   "options": "Plant Floor"
+  },
+  {
+   "default": "Global",
+   "fieldname": "freeze_scope",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Freeze Scope",
+   "options": "\nGlobal\nPlant Floor\nWorkstation"
+  },
+  {
+   "default": "2",
+   "fieldname": "freeze_days",
+   "fieldtype": "Int",
+   "label": "Freeze Days"
+  },
+  {
+   "default": "1",
+   "fieldname": "requires_management_approval",
+   "fieldtype": "Check",
+   "label": "Requires Management Approval"
+  },
+  {
+   "default": "1",
+   "fieldname": "apply_to_released_segments",
+   "fieldtype": "Check",
+   "label": "Apply To Released Segments"
+  },
+  {
+   "fieldname": "is_default",
+   "fieldtype": "Check",
+   "label": "Default"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "links": [],
+ "module": "Injection APS",
+ "name": "APS Freeze Rule",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

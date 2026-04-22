@@ -1,0 +1,157 @@
+STANDARD_CUSTOM_FIELDS = {
+	"Work Order": [
+		{
+			"fieldname": "custom_aps_run",
+			"label": "APS Run",
+			"fieldtype": "Link",
+			"options": "APS Planning Run",
+			"insert_after": "planned_start_date",
+			"allow_on_submit": 1,
+			"read_only": 1,
+			"in_list_view": 1,
+			"no_copy": 1,
+			"description": "Owned by Injection APS.",
+		},
+		{
+			"fieldname": "custom_aps_source",
+			"label": "APS Source",
+			"fieldtype": "Data",
+			"insert_after": "custom_aps_run",
+			"allow_on_submit": 1,
+			"read_only": 1,
+			"no_copy": 1,
+			"description": "Owned by Injection APS.",
+		},
+		{
+			"fieldname": "custom_aps_required_delivery_date",
+			"label": "APS Required Delivery Date",
+			"fieldtype": "Date",
+			"insert_after": "custom_aps_source",
+			"allow_on_submit": 1,
+			"read_only": 1,
+			"no_copy": 1,
+			"description": "Owned by Injection APS.",
+		},
+		{
+			"fieldname": "custom_aps_is_urgent",
+			"label": "APS Urgent",
+			"fieldtype": "Check",
+			"insert_after": "custom_aps_required_delivery_date",
+			"allow_on_submit": 1,
+			"read_only": 1,
+			"no_copy": 1,
+			"description": "Owned by Injection APS.",
+		},
+		{
+			"fieldname": "custom_aps_release_status",
+			"label": "APS Release Status",
+			"fieldtype": "Select",
+			"options": "\nPending\nPlanned\nSynced\nReleased\nLocked\nSkipped",
+			"insert_after": "custom_aps_is_urgent",
+			"allow_on_submit": 1,
+			"read_only": 1,
+			"no_copy": 1,
+			"description": "Owned by Injection APS.",
+		},
+		{
+			"fieldname": "custom_aps_locked_for_reschedule",
+			"label": "APS Locked For Reschedule",
+			"fieldtype": "Check",
+			"insert_after": "custom_aps_release_status",
+			"allow_on_submit": 1,
+			"read_only": 1,
+			"no_copy": 1,
+			"description": "Owned by Injection APS.",
+		},
+		{
+			"fieldname": "custom_aps_schedule_reference",
+			"label": "APS Schedule Reference",
+			"fieldtype": "Data",
+			"insert_after": "custom_aps_locked_for_reschedule",
+			"allow_on_submit": 1,
+			"read_only": 1,
+			"no_copy": 1,
+			"description": "Owned by Injection APS.",
+		},
+	],
+	"Work Order Scheduling": [
+		{
+			"fieldname": "custom_aps_run",
+			"label": "APS Run",
+			"fieldtype": "Link",
+			"options": "APS Planning Run",
+			"insert_after": "status",
+			"allow_on_submit": 1,
+			"read_only": 1,
+			"in_list_view": 1,
+			"no_copy": 1,
+			"description": "Owned by Injection APS.",
+		},
+		{
+			"fieldname": "custom_aps_freeze_state",
+			"label": "APS Freeze State",
+			"fieldtype": "Select",
+			"options": "\nOpen\nFrozen\nLocked",
+			"insert_after": "custom_aps_run",
+			"allow_on_submit": 1,
+			"read_only": 1,
+			"no_copy": 1,
+			"description": "Owned by Injection APS.",
+		},
+		{
+			"fieldname": "custom_aps_approval_state",
+			"label": "APS Approval State",
+			"fieldtype": "Select",
+			"options": "\nPending\nApproved\nRejected",
+			"insert_after": "custom_aps_freeze_state",
+			"allow_on_submit": 1,
+			"read_only": 1,
+			"no_copy": 1,
+			"description": "Owned by Injection APS.",
+		},
+	],
+	"Delivery Plan": [
+		{
+			"fieldname": "custom_aps_version",
+			"label": "APS Version",
+			"fieldtype": "Data",
+			"insert_after": "remark",
+			"allow_on_submit": 1,
+			"read_only": 1,
+			"no_copy": 1,
+			"description": "Owned by Injection APS.",
+		},
+		{
+			"fieldname": "custom_aps_source",
+			"label": "APS Source",
+			"fieldtype": "Data",
+			"insert_after": "custom_aps_version",
+			"allow_on_submit": 1,
+			"read_only": 1,
+			"no_copy": 1,
+			"description": "Owned by Injection APS.",
+		},
+	],
+}
+
+APS_OWNED_PAGE_NAMES = [
+	"aps-schedule-console",
+	"aps-net-requirement-workbench",
+	"aps-run-console",
+	"aps-schedule-gantt",
+	"aps-release-center",
+]
+
+APS_OWNED_RECORDS = {
+	"Workspace": ["Injection APS"],
+	"Custom HTML Block": ["Injection APS Dashboard"],
+	"Page": APS_OWNED_PAGE_NAMES,
+}
+
+
+def get_standard_custom_field_names():
+	names = []
+	for doctype, fields in STANDARD_CUSTOM_FIELDS.items():
+		for field in fields:
+			names.append(f"{doctype}-{field['fieldname']}")
+	return names

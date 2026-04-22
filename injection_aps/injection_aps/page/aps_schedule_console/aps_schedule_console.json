@@ -1,0 +1,24 @@
+{
+ "content": null,
+ "doctype": "Page",
+ "module": "Injection APS",
+ "name": "aps-schedule-console",
+ "page_name": "aps-schedule-console",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Manufacturing Manager"
+  },
+  {
+   "role": "Sales User"
+  },
+  {
+   "role": "Stock Manager"
+  }
+ ],
+ "standard": "Yes",
+ "system_page": 0,
+ "title": "Schedule Import & Diff"
+}

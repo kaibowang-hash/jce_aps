@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:workstation",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "workstation",
+  "plant_floor",
+  "machine_tonnage",
+  "risk_category",
+  "hourly_capacity_qty",
+  "daily_capacity_qty",
+  "queue_sequence",
+  "machine_status",
+  "max_run_hours",
+  "is_active",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "workstation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Machine / Workstation",
+   "options": "Workstation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plant_floor",
+   "fieldtype": "Link",
+   "label": "Plant Floor",
+   "options": "Plant Floor"
+  },
+  {
+   "fieldname": "machine_tonnage",
+   "fieldtype": "Float",
+   "label": "Machine Tonnage"
+  },
+  {
+   "fieldname": "risk_category",
+   "fieldtype": "Data",
+   "label": "Risk Category"
+  },
+  {
+   "fieldname": "hourly_capacity_qty",
+   "fieldtype": "Float",
+   "label": "Hourly Capacity Qty"
+  },
+  {
+   "fieldname": "daily_capacity_qty",
+   "fieldtype": "Float",
+   "label": "Daily Capacity Qty"
+  },
+  {
+   "fieldname": "queue_sequence",
+   "fieldtype": "Int",
+   "label": "Queue Sequence"
+  },
+  {
+   "default": "Available",
+   "fieldname": "machine_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Machine Status",
+   "options": "\nAvailable\nRunning\nSetup\nMaintenance\nFault\nUnavailable\nDisabled"
+  },
+  {
+   "fieldname": "max_run_hours",
+   "fieldtype": "Float",
+   "label": "Max Run Hours"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "links": [],
+ "module": "Injection APS",
+ "name": "APS Machine Capability",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

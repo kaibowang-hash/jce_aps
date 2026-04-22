@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "APS-REL-.#####",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "planning_run",
+  "company",
+  "release_from_date",
+  "release_to_date",
+  "status",
+  "generated_work_orders",
+  "work_order_scheduling"
+ ],
+ "fields": [
+  {
+   "fieldname": "planning_run",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Planning Run",
+   "options": "APS Planning Run",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "release_from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Release From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "release_to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Release To Date",
+   "reqd": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nDraft\nReleased\nCancelled"
+  },
+  {
+   "fieldname": "generated_work_orders",
+   "fieldtype": "Int",
+   "label": "Generated Work Orders",
+   "read_only": 1
+  },
+  {
+   "fieldname": "work_order_scheduling",
+   "fieldtype": "Link",
+   "label": "Work Order Scheduling",
+   "options": "Work Order Scheduling",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "module": "Injection APS",
+ "name": "APS Release Batch",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

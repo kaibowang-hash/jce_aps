@@ -1,0 +1,188 @@
+{
+ "actions": [],
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "default_company",
+  "default_plant_floor",
+  "planning_horizon_days",
+  "release_horizon_days",
+  "freeze_days",
+  "default_setup_minutes",
+  "default_first_article_minutes",
+  "default_hourly_capacity_qty",
+  "item_food_grade_field",
+  "item_first_article_field",
+  "item_color_field",
+  "item_material_field",
+  "item_safety_stock_field",
+  "item_max_stock_field",
+  "item_min_batch_field",
+  "customer_short_name_field",
+  "workstation_risk_field",
+  "scheduling_item_risk_field",
+  "plant_floor_source_warehouse_field",
+  "plant_floor_wip_warehouse_field",
+  "plant_floor_fg_warehouse_field",
+  "plant_floor_scrap_warehouse_field"
+ ],
+ "fields": [
+  {
+   "fieldname": "default_company",
+   "fieldtype": "Link",
+   "label": "Default Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "default_plant_floor",
+   "fieldtype": "Link",
+   "label": "Default Plant Floor",
+   "options": "Plant Floor"
+  },
+  {
+   "default": "14",
+   "fieldname": "planning_horizon_days",
+   "fieldtype": "Int",
+   "label": "Planning Horizon Days"
+  },
+  {
+   "default": "3",
+   "fieldname": "release_horizon_days",
+   "fieldtype": "Int",
+   "label": "Release Horizon Days"
+  },
+  {
+   "default": "2",
+   "fieldname": "freeze_days",
+   "fieldtype": "Int",
+   "label": "Freeze Days"
+  },
+  {
+   "default": "30",
+   "fieldname": "default_setup_minutes",
+   "fieldtype": "Float",
+   "label": "Default Setup Minutes"
+  },
+  {
+   "default": "45",
+   "fieldname": "default_first_article_minutes",
+   "fieldtype": "Float",
+   "label": "Default First Article Minutes"
+  },
+  {
+   "default": "120",
+   "fieldname": "default_hourly_capacity_qty",
+   "fieldtype": "Float",
+   "label": "Default Hourly Capacity Qty"
+  },
+  {
+   "default": "custom_food_grade",
+   "fieldname": "item_food_grade_field",
+   "fieldtype": "Data",
+   "label": "Item Food Grade Field"
+  },
+  {
+   "default": "custom_is_first_article",
+   "fieldname": "item_first_article_field",
+   "fieldtype": "Data",
+   "label": "Item First Article Field"
+  },
+  {
+   "default": "color",
+   "fieldname": "item_color_field",
+   "fieldtype": "Data",
+   "label": "Item Color Field"
+  },
+  {
+   "default": "material",
+   "fieldname": "item_material_field",
+   "fieldtype": "Data",
+   "label": "Item Material Field"
+  },
+  {
+   "default": "safety_stock",
+   "fieldname": "item_safety_stock_field",
+   "fieldtype": "Data",
+   "label": "Item Safety Stock Field"
+  },
+  {
+   "default": "max_stock_qty",
+   "fieldname": "item_max_stock_field",
+   "fieldtype": "Data",
+   "label": "Item Max Stock Field"
+  },
+  {
+   "default": "min_order_qty",
+   "fieldname": "item_min_batch_field",
+   "fieldtype": "Data",
+   "label": "Item Min Batch Field"
+  },
+  {
+   "default": "custom_customer_short_name",
+   "fieldname": "customer_short_name_field",
+   "fieldtype": "Data",
+   "label": "Customer Short Name Field"
+  },
+  {
+   "default": "custom_production_risk_category",
+   "fieldname": "workstation_risk_field",
+   "fieldtype": "Data",
+   "label": "Workstation Risk Field"
+  },
+  {
+   "default": "custom_workstation_risk_category_",
+   "fieldname": "scheduling_item_risk_field",
+   "fieldtype": "Data",
+   "label": "Scheduling Item Risk Field"
+  },
+  {
+   "default": "custom_default_source_warehouse",
+   "fieldname": "plant_floor_source_warehouse_field",
+   "fieldtype": "Data",
+   "label": "Plant Floor Source Warehouse Field"
+  },
+  {
+   "default": "warehouse",
+   "fieldname": "plant_floor_wip_warehouse_field",
+   "fieldtype": "Data",
+   "label": "Plant Floor WIP Warehouse Field"
+  },
+  {
+   "default": "custom_default_finished_goods_warehouse",
+   "fieldname": "plant_floor_fg_warehouse_field",
+   "fieldtype": "Data",
+   "label": "Plant Floor FG Warehouse Field"
+  },
+  {
+   "default": "custom_default_scrap_warehouse",
+   "fieldname": "plant_floor_scrap_warehouse_field",
+   "fieldtype": "Data",
+   "label": "Plant Floor Scrap Warehouse Field"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "module": "Injection APS",
+ "name": "APS Settings",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing Manager"
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,118 @@
+{
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "workstation",
+  "plant_floor",
+  "start_time",
+  "end_time",
+  "planned_qty",
+  "sequence_no",
+  "setup_minutes",
+  "changeover_minutes",
+  "mould_reference",
+  "risk_flags",
+  "segment_status",
+  "color_code",
+  "material_code",
+  "is_locked",
+  "is_manual"
+ ],
+ "fields": [
+  {
+   "fieldname": "workstation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Machine / Workstation",
+   "options": "Workstation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plant_floor",
+   "fieldtype": "Link",
+   "label": "Plant Floor",
+   "options": "Plant Floor"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Start Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "End Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "planned_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Planned Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sequence_no",
+   "fieldtype": "Int",
+   "label": "Sequence No"
+  },
+  {
+   "fieldname": "setup_minutes",
+   "fieldtype": "Float",
+   "label": "Setup Minutes"
+  },
+  {
+   "fieldname": "changeover_minutes",
+   "fieldtype": "Float",
+   "label": "Changeover Minutes"
+  },
+  {
+   "fieldname": "mould_reference",
+   "fieldtype": "Data",
+   "label": "Mould Reference"
+  },
+  {
+   "fieldname": "risk_flags",
+   "fieldtype": "Small Text",
+   "label": "Risk Flags"
+  },
+  {
+   "fieldname": "segment_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Segment Status",
+   "options": "\nPlanned\nRisk\nApproved\nSynced\nReleased\nCompleted\nBlocked"
+  },
+  {
+   "fieldname": "color_code",
+   "fieldtype": "Data",
+   "label": "Color"
+  },
+  {
+   "fieldname": "material_code",
+   "fieldtype": "Data",
+   "label": "Material"
+  },
+  {
+   "fieldname": "is_locked",
+   "fieldtype": "Check",
+   "label": "Locked"
+  },
+  {
+   "fieldname": "is_manual",
+   "fieldtype": "Check",
+   "label": "Manual"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "module": "Injection APS",
+ "name": "APS Schedule Segment",
+ "permissions": [],
+ "sort_field": "idx",
+ "sort_order": "ASC"
+}

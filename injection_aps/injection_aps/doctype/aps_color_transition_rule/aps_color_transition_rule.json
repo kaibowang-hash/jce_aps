@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "APS-CLR-.#####",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "from_color",
+  "to_color",
+  "change_level",
+  "penalty_score",
+  "setup_minutes",
+  "is_blocking",
+  "is_active",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_color",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "From Color",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_color",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "To Color",
+   "reqd": 1
+  },
+  {
+   "default": "Medium",
+   "fieldname": "change_level",
+   "fieldtype": "Select",
+   "label": "Change Level",
+   "options": "\nLow\nMedium\nHigh\nBlocked"
+  },
+  {
+   "fieldname": "penalty_score",
+   "fieldtype": "Int",
+   "label": "Penalty Score"
+  },
+  {
+   "fieldname": "setup_minutes",
+   "fieldtype": "Float",
+   "label": "Setup Minutes"
+  },
+  {
+   "fieldname": "is_blocking",
+   "fieldtype": "Check",
+   "label": "Blocking"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "links": [],
+ "module": "Injection APS",
+ "name": "APS Color Transition Rule",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,337 @@
+Injection APS,注塑 APS
+Injection APS Overview,注塑 APS 总览
+"Demand, planning runs, release status and blocking exceptions stay isolated inside this app.",需求池、计划运算、释放状态和关键异常都由本模块独立承载。
+Refresh,刷新
+Loading APS snapshot...,正在加载 APS 快照...
+Active Schedules,生效排期版本
+Current customer schedule versions,当前客户生效排期版本数
+Demand Rows,需求池行数
+Open APS demand pool rows,APS 需求池中的未关闭需求行数
+Net Requirements,净需求数
+Current positive requirements,当前净需求大于 0 的需求行数
+Open Runs,未关闭运算
+Draft / planned / approved runs,草稿/已运算/已审批的 APS 运算单
+Risk Exceptions,风险异常
+Blocking and critical issues,阻断类与严重类异常
+Released Batches,已释放批次
+APS release batches created,已创建的 APS 释放批次
+Synced Schedules,已同步排程
+Results already pushed downstream,已下发到执行层的排程结果
+Machines Configured,已配置机台
+APS machine capability rows,APS 机台能力配置行数
+APS workspace refreshed.,APS 工作台已刷新。
+Failed to load Injection APS workspace summary.,注塑 APS 工作台汇总加载失败。
+APS Console,APS 控制台
+Schedule Import & Diff,排期导入与版本对比
+Net Requirement Workbench,净需求工作台
+APS Run Console,APS 运算控制台
+Machine Schedule Gantt,机台排程看板
+Release & Exception Center,释放与异常中心
+Transactions,业务单据
+Configuration,基础配置
+Customer Delivery Schedule,客户交付排期
+Customer Delivery Schedule Item,客户交付排期明细
+APS Schedule Import Batch,APS 排期导入批次
+APS Demand Pool,APS 需求池
+APS Net Requirement,APS 净需求
+APS Planning Run,APS 计划运算
+APS Schedule Result,APS 排程结果
+APS Schedule Segment,APS 排程段
+APS Release Batch,APS 释放批次
+APS Exception Log,APS 异常日志
+APS Freeze Rule,APS 冻结规则
+APS Machine Capability,APS 机台能力
+APS Mould-Machine Rule,APS 模具机台匹配规则
+APS Color Transition Rule,APS 颜色切换规则
+APS Settings,APS 设置
+APS Approval State,APS 审批状态
+APS Freeze State,APS 冻结状态
+APS Locked For Reschedule,APS 禁止重排
+APS Required Delivery Date,APS 需求交期
+APS Release Status,APS 释放状态
+APS Run,APS 运算批次
+APS Schedule Reference,APS 排程引用
+APS Source,APS 来源
+APS Urgent,APS 紧急件
+APS Version,APS 版本
+Owned by Injection APS.,由注塑 APS 模块维护。
+Customer Schedule Versions,客户排期版本
+Preview Import,预览导入
+Import Pending,正式导入预览结果
+Schedule List,排期列表
+Import Batches,导入批次
+Pending Preview,待导入预览
+Recent Import Batches,最近导入批次
+Preview,预览
+None,无
+Run a preview before the formal import.,正式导入前请先执行预检。
+Preview Customer Schedule Import,预览客户排期导入
+Excel File,Excel 文件
+Rows JSON,JSON 行数据
+Optional. Paste JSON rows when no Excel file is available.,无 Excel 文件时，可直接粘贴 JSON 数据。
+Running import preview...,正在执行导入预检...
+Preview completed. Review the changes and click Import Pending when ready.,预检完成，请确认差异后点击“正式导入预览结果”。
+Preview ready. Import pending confirmation.,预检结果已生成，待确认正式导入。
+Imported schedule {0}.,排期 {0} 已正式导入。
+Loading schedule versions...,正在加载排期版本...
+Schedule console refreshed.,排期工作台已刷新。
+Failed to load schedule versions.,排期版本加载失败。
+Active Qty,生效版本总数量
+One active version per customer/company,每个客户与公司组合仅允许一个生效版本
+Recent Batches,最近导入批次
+Latest import attempts,最近导入记录
+Total qty in active versions,生效版本中的总需求数量
+Preview Summary,预检汇总
+Preview Current Rows,预览当前行数据
+Rows,行数
+Changes,差异项
+Part No,客户料号
+Prev Qty,原数量
+Change,差异
+Demand pool rebuilt.,需求池已重建。
+Net Requirement Workbench,净需求工作台
+"Demand pool, inventory, WIP, safety stock and minimum batch uplift are all visible here before a planning run starts.",在启动 APS 运算前，这里会集中展示需求池、库存、在制、安全库存缺口和最小经济批量补齐结果。
+Rebuild Demand Pool,重建需求池
+Recalculate Net Requirements,重算净需求
+Loading net requirements...,正在加载净需求...
+Net requirement workbench refreshed.,净需求工作台已刷新。
+Failed to load net requirements.,净需求加载失败。
+Net requirements recalculated.,净需求已重算。
+Includes minimum batch uplift,已包含最小经济批量补齐
+Demand Date,需求日期
+Demand,需求量
+Open WO,未完工工单
+Safety Gap,安全库存缺口
+Min Batch,最小经济批量
+Reason,计算说明
+Create Trial Planning Run,新建 APS 试算
+Run Trial,执行试算
+Planning Runs,APS 运算列表
+Loading planning runs...,正在加载 APS 运算...
+Run console refreshed.,APS 运算控制台已刷新。
+Failed to load planning runs.,APS 运算加载失败。
+"Run a planning pass, review the proposed load, then approve and release from the form when the sequence is stable.",先执行一次 APS 运算，确认排程建议后，再在表单中审批和释放。
+Approval,审批
+Plan Qty,建议排产数量
+Scheduled,已排数量
+Unscheduled,未排数量
+Exceptions,异常数
+Planning run completed.,APS 运算已完成。
+Planning run approved.,APS 运算已审批。
+Approve,审批通过
+Sync Downstream,同步下游执行层
+Run synced downstream.,已同步到下游执行层。
+Release Window,释放短期窗口
+Release Short-Term Window,释放短期执行窗口
+Release Horizon Days,释放窗口天数
+Release completed.,短期窗口释放完成。
+Rebuild Exceptions,重算异常
+Exceptions rebuilt.,异常已重建。
+Approve the APS Planning Run before syncing it downstream.,同步下游前，请先审批 APS 计划运算。
+Machine Schedule View,机台排程视图
+This一期版本 keeps the schedule board readable and auditable without enabling drag editing yet.,当前一期版本优先保证排程板可读、可追溯，暂未开放拖拽式编辑。
+Load Gantt,加载排程看板
+Open Run,打开 APS 运算
+Choose a run first.,请先选择 APS 运算。
+Choose a planning run to load the schedule board.,请先选择一张 APS 运算单，再加载排程看板。
+Loading Gantt data...,正在加载排程看板...
+Gantt refreshed.,排程看板已刷新。
+Failed to load Gantt data.,排程看板加载失败。
+Not Selected,未选择
+No scheduled segments for this run.,当前 APS 运算暂无排程段。
+No schedule segments were generated for this planning run.,当前 APS 运算未生成任何排程段。
+Machines,机台数
+Window Start,窗口开始
+Window End,窗口结束
+"Release only the near-term window, keep the downstream execution layer intact, and make exception review visible for PMC, Sales and Warehouse.",仅释放近端执行窗口，保持下游执行层稳定，同时让 PMC、销售和仓库能直接看到异常。
+Loading release batches and exceptions...,正在加载释放批次和异常...
+Release center refreshed.,释放与异常中心已刷新。
+Failed to load release center.,释放与异常中心加载失败。
+Release Batches,释放批次
+Open Exceptions,未关闭异常
+Highest-priority exceptions,最高优先级异常
+From,开始
+To,结束
+Work Orders,工单数
+Scheduling,排产单
+Type,类型
+Machine / Workstation,机台
+Message,异常内容
+Impact,影响
+Run insert-order analysis to see displaced segments and changeover cost.,执行插单影响分析后，可查看被挤占的排程段和换模换色损失。
+Latest Impact Analysis,最近一次影响分析
+Scheduled Qty,已排数量
+Unscheduled Qty,未排数量
+Changeover Minutes,切换准备时间(分钟)
+Impacted Customers,受影响客户
+Result,排程结果
+Start,开始时间
+End,结束时间
+Choose a planning run first.,请先选择 APS 运算。
+Sync Approved Run,同步已审批运算
+Run synced to Delivery Plan / Work Order Scheduling.,已同步到 Delivery Plan / Work Order Scheduling。
+Work order release completed.,工单释放已完成。
+Exceptions recalculated.,异常已重算。
+Insert Order Impact Analysis,插单影响分析
+Required Date,需求交期
+Analyze,执行分析
+Impact analysis completed.,插单影响分析已完成。
+No rows found.,未找到数据。
+Unknown,未知
+APS Approval State,APS 审批状态
+APS Freeze State,APS 冻结状态
+APS Locked For Reschedule,APS 禁止重排
+APS Release Status,APS 释放状态
+APS Required Delivery Date,APS 需求交期
+APS Schedule Reference,APS 排程引用
+APS Source,APS 来源
+APS Urgent,APS 紧急件
+APS Version,APS 版本
+Source Type,来源类型
+Schedule Total Qty,排期总数量
+Change Summary,差异汇总
+Schedule Items,排期明细
+Customer Part No,客户料号
+Allocated Qty,已分配数量
+Produced Qty,已生产数量
+Delivered Qty,已交付数量
+Balance Qty,未满足数量
+Change Type,差异类型
+Demand Source,需求来源
+Priority Score,优先级分值
+Food Grade,食品级
+First Article,首件
+System Generated,系统自动生成
+Demand Qty,需求数量
+Available Stock Qty,可用库存数量
+Open Work Order Qty,未完工工单数量
+Safety Stock Gap Qty,安全库存缺口数量
+Max Stock Qty,最大库存数量
+Overstock Suppression Qty,超库存抑制数量
+Minimum Batch Qty,最小经济批量
+Planning Qty,建议排产数量
+Net Requirement Qty,净需求数量
+Reason Text,计算说明
+Horizon Days,计划视窗天数
+Horizon Start,计划开始时间
+Horizon End,计划结束时间
+Run Type,运算类型
+Approved By,审批人
+Approved On,审批时间
+Total Planning Qty,总建议排产数量
+Total Scheduled Qty,总已排数量
+Total Unscheduled Qty,总未排数量
+Result Count,结果数量
+Exception Count,异常数量
+Requested Date,需求交期
+Risk Status,风险状态
+Manual,人工调整
+Schedule Segments,排程段明细
+Release From Date,释放开始日期
+Release To Date,释放结束日期
+Generated Work Orders,生成工单数
+Exception Type,异常类型
+Resolution Hint,处理建议
+Source Doctype,来源单据类型
+Source Name,来源单据号
+Rule Name,规则名称
+Freeze Scope,冻结范围
+Requires Management Approval,需管理审批
+Apply To Released Segments,作用于已释放排程段
+Default,默认规则
+Machine Tonnage,机台吨位
+Risk Category,风险类别
+Hourly Capacity Qty,小时产能
+Daily Capacity Qty,日产能
+Queue Sequence,排机顺序
+Machine Status,机台状态
+Max Run Hours,最大连续运行时长
+Mould Reference,模具引用
+Preferred,优选机台
+Priority,优先顺序
+Min Tonnage,最小吨位
+Max Tonnage,最大吨位
+From Color,起始颜色
+To Color,目标颜色
+Change Level,换色等级
+Penalty Score,惩罚分值
+Setup Minutes,准备时间(分钟)
+Current customer schedule versions,当前客户生效排期版本数
+Open APS demand pool rows,APS 需求池中的未关闭需求行数
+Current positive requirements,当前净需求大于 0 的需求行数
+Draft / planned / approved runs,草稿/已运算/已审批的 APS 运算单
+Blocking and critical issues,阻断类与严重类异常
+APS release batches created,已创建的 APS 释放批次
+Results already pushed downstream,已下发到执行层的排程结果
+APS machine capability rows,APS 机台能力配置行数
+Customer Delivery Schedule,客户交付排期
+Forecast,预测排期
+Urgent Order,紧急插单
+Sales Order Backlog,销售订单积压
+Safety Stock,安全库存补货
+Trial Production,试产需求
+Complaint Replenishment,客诉补料
+Superseded,已被新版本替代
+Covered,已覆盖
+Synced,已同步
+Partially Released,部分释放
+Risk,有风险
+Blocked,已阻断
+Reviewed,已评审
+Resolved,已解决
+Dismissed,已忽略
+Trial,试算
+Formal,正式运算
+Local Replan,局部重排
+Machine Replan,单机重排
+Attention,关注
+Warning,预警
+Blocking,阻断
+Available,可用
+Running,运行中
+Setup,准备中
+Maintenance,保养中
+Fault,故障
+Unavailable,不可用
+Machine Unavailable,机台不可排
+FDA Conflict,FDA 冲突
+Late Delivery Risk,交期延误风险
+Color Transition,换色切换
+Material Changeover,换料切换
+First Article Confirmation,首件确认
+Missing BOM,BOM 缺失
+Scheduling Risk,排程风险
+"Only one active delivery schedule version is allowed per customer and company.",同一客户和公司仅允许一个生效中的交付排期版本。
+"Cannot uninstall Injection APS while APS business data or standard-document APS references still exist: {0}",存在 APS 业务数据或标准单据 APS 引用，暂不允许卸载 Injection APS：{0}
+Min Tonnage cannot be greater than Max Tonnage.,最小吨位不能大于最大吨位。
+Freeze Days cannot be negative.,冻结天数不能为负数。
+Horizon End cannot be earlier than Horizon Start.,计划结束时间不能早于开始时间。
+Segment end time cannot be earlier than start time.,排程段结束时间不能早于开始时间。
+"Result {0} has risk state {1} and unscheduled qty {2}.",排程结果 {0} 的风险状态为 {1}，且仍有未排数量 {2}。
+Review the planned sequence, capacity and frozen segments.,请检查排程顺序、产能和冻结段设置。
+"Demand {0} - available stock {1} - open work orders {2} + safety gap {3} - overstock suppression {4}; minimum batch {5}; planning qty {6}.","需求 {0} - 可用库存 {1} - 未完工工单 {2} + 安全库存缺口 {3} - 超库存抑制 {4}；最小经济批量 {5}；建议排产数量 {6}。"
+"No eligible APS machine capability rows were found for {0}.",产品 {0} 未找到可用的 APS 机台能力配置。
+Maintain APS Machine Capability or relax mould-machine constraints.,请维护 APS 机台能力配置，或放宽模具机台匹配限制。
+"Workstation {0} risk category {1} cannot run FDA requirement for {2}.",机台 {0} 的风险类别 {1} 不允许排产 FDA 要求产品 {2}。
+Select an FDA-capable workstation or change the risk mapping.,请选择 FDA 合规机台，或调整风险类别映射。
+"Only {0} of {1} can be scheduled before the current horizon for {2}.",在当前计划视窗内，产品 {2} 仅能排入 {0}/{1}。
+Extend the horizon, rebalance machines or split the requirement.,请延长计划视窗、平衡机台负荷或拆分需求。
+"Color transition {0} -> {1} has penalty {2}.",颜色从 {0} 切换到 {1} 的换色惩罚为 {2}。
+Group similar colors to reduce changeover cost.,建议按相近颜色顺排，减少换色损失。
+"Material changeover is required on workstation {0}.",机台 {0} 需要换料。
+Group the same material family where possible.,建议同材质连续排产。
+"First article confirmation time was added for {0}.",机台 {0} 已计入首件确认时间。
+Keep QA review slots visible in the short horizon.,请在短期计划中预留首件检验/品质确认时段。
+"Generated by Injection APS run {0}",由 Injection APS 运算 {0} 生成
+"No BOM was found for {0}, so APS could not release a work order.",产品 {0} 未找到有效 BOM，APS 无法释放工单。
+Set a default BOM before attempting release.,请先设置默认 BOM 再执行释放。
+"APS Release Batch {0}",APS 释放批次 {0}
+APS Warnings,APS 预警
+Demand Pool Warnings,需求池预警
+Net Requirement Warnings,净需求预警
+Planning Precheck Warnings,排程预检预警
+Warnings,预警数
+Skipped Rows,跳过行数
+Additional warnings,其余预警
+"Item reference {0} could not be resolved to an Item record.",物料引用 {0} 无法解析到有效的物料档案。
+"Skipped {0} {1} because item reference {2} could not be resolved to an Item record.","已跳过 {0} {1}，因为物料引用 {2} 无法解析到有效的物料档案。"

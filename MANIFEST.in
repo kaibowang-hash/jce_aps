@@ -1,0 +1,11 @@
+recursive-include injection_aps *.css
+recursive-include injection_aps *.csv
+recursive-include injection_aps *.html
+recursive-include injection_aps *.ico
+recursive-include injection_aps *.js
+recursive-include injection_aps *.json
+recursive-include injection_aps *.md
+recursive-include injection_aps *.png
+recursive-include injection_aps *.py
+recursive-include injection_aps *.svg
+recursive-include injection_aps *.txt

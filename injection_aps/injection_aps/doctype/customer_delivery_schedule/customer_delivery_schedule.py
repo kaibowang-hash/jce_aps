@@ -1,0 +1,34 @@
+from __future__ import annotations
+
+import frappe
+from frappe import _
+from frappe.model.document import Document
+from frappe.utils import flt
+
+
+class CustomerDeliverySchedule(Document):
+	def validate(self):
+		self.status = self.status or "Draft"
+		self.source_type = self.source_type or "Customer Delivery Schedule"
+		self.schedule_total_qty = sum(flt(row.qty) for row in self.get("items") or [])
+		self._validate_active_version()
+
+	def _validate_active_version(self):
+		if self.status != "Active" or not self.customer or not self.company:
+			return
+
+		existing = frappe.get_all(
+			"Customer Delivery Schedule",
+			filters={
+				"customer": self.customer,
+				"company": self.company,
+				"status": "Active",
+				"name": ("!=", self.name),
+			},
+			pluck="name",
+			limit=1,
+		)
+		if existing:
+			frappe.throw(
+				_("Only one active delivery schedule version is allowed per customer and company.")
+			)

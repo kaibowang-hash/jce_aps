@@ -1,0 +1,24 @@
+{
+ "content": null,
+ "doctype": "Page",
+ "module": "Injection APS",
+ "name": "aps-net-requirement-workbench",
+ "page_name": "aps-net-requirement-workbench",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Manufacturing Manager"
+  },
+  {
+   "role": "Stock Manager"
+  },
+  {
+   "role": "Purchase Manager"
+  }
+ ],
+ "standard": "Yes",
+ "system_page": 0,
+ "title": "Net Requirement Workbench"
+}

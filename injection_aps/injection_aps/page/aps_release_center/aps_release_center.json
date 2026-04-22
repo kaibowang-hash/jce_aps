@@ -1,0 +1,27 @@
+{
+ "content": null,
+ "doctype": "Page",
+ "module": "Injection APS",
+ "name": "aps-release-center",
+ "page_name": "aps-release-center",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Manufacturing Manager"
+  },
+  {
+   "role": "Sales User"
+  },
+  {
+   "role": "Stock Manager"
+  },
+  {
+   "role": "Purchase Manager"
+  }
+ ],
+ "standard": "Yes",
+ "system_page": 0,
+ "title": "Release & Exception Center"
+}
